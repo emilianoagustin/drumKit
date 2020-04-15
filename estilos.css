@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    background-image: url(https://source.unsplash.com/fKRY_EKWxU8/1600x900);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+span{
+    font-size: 1.2rem;
+    color: darkorange;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 10px;
+    min-height: 60vh;
+}
+
+.key{
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    line-height: 50px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    transition: all .07s ease;
+}
+
+.play{
+    transform: scale(1.1);
+    box-shadow: 0 0 4px darkorange;
+    border-color: darkorange;
+}
+
+.kick{
+    grid-column: 3 / span 3;
+    grid-row: 3/4;
+}
+.snare{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.clap{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.hihat{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.openhat{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+.tink{
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+.ride{
+    grid-column: 6 / 7;
+    grid-row: 1 / 2;
+}
+.tom{
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+}
+.boom{
+    grid-column: 7 / 8;
+    grid-row: 2 / 3;
+}
+
